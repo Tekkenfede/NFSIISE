@@ -15,8 +15,7 @@ OS=$(uname)
 
 function compile_x86
 {
-	CPU_FLAGS='-mno-sse2 -mno-sse -mno-mmx'
-	COMMON_FLAGS='-Wall -m32 -std=gnu89'
+	COMMON_FLAGS='-Wall -std=gnu89'
 
 	echo -n "Building"
 	if [[ $BUILD_TYPE == "debug" ]]; then
